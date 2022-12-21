@@ -14,13 +14,13 @@ In our project, we want to explore glaciers based on the Siegfried map. That mea
 ### Install pytorch and mmsegmentation environment
 Install pytorch according to local cofiguration (pytorch 1.13.0+cu116) and then install openmim
 
-#```
+```
 pip3 install openmim
 mim install mmcv-full
 git clone https://github.com/open-mmlab/mmsegmentation.git
 cd ./mmsegmentation
 pip install -e .
-#```
+```
 
 ### Customize dataset
 Download dataset from Google drive [Training data](https://drive.google.com/drive/folders/1KdLF_WiWUH_1xi4EublGl6ZUBeBJ07g3?usp=share_link)
@@ -30,8 +30,8 @@ After this step, we have an unique name of our customized dataset in the mmopenL
 ### Customize training configs file & Training model
 Assign `data_root` to your local training data directory
 Enter to mmsegmentation git repository and run `./tools/train.py` with your customized configs file or use ours.
+
 `python tools/train.py ./configs/ocrnet_hr18_1024x1024_2k_dhdata.py`
-``
 
 ## Repository Architecture
 
